@@ -1,138 +1,138 @@
-total 1760
--rw-r--r--. 1 root root 10751 Oct 14 22:03 NIFTY_14-10-2018_22:03.csv
--rw-r--r--. 1 root root 10751 Oct 14 22:41 NIFTY_14-10-2018_22:41.csv
--rw-r--r--. 1 root root 10503 Oct 15 12:30 NIFTY_15-10-2018_12:30.csv
--rw-r--r--. 1 root root 10744 Oct 15 15:32 NIFTY_15-10-2018_15:32.csv
--rw-r--r--. 1 root root  9855 Oct 16 09:30 NIFTY_16-10-2018_09:30.csv
--rw-r--r--. 1 root root 10539 Oct 16 11:50 NIFTY_16-10-2018_11:50.csv
--rw-r--r--. 1 root root 10365 Oct 16 15:32 NIFTY_16-10-2018_15:32.csv
--rw-r--r--. 1 root root 10145 Oct 17 09:30 NIFTY_17-10-2018_09:30.csv
--rw-r--r--. 1 root root 10457 Oct 17 11:50 NIFTY_17-10-2018_11:50.csv
--rw-r--r--. 1 root root 10629 Oct 17 15:32 NIFTY_17-10-2018_15:32.csv
--rw-r--r--. 1 root root 10937 Oct 18 09:30 NIFTY_18-10-2018_09:30.csv
--rw-r--r--. 1 root root 10937 Oct 18 11:50 NIFTY_18-10-2018_11:50.csv
--rw-r--r--. 1 root root 10937 Oct 18 15:32 NIFTY_18-10-2018_15:32.csv
--rw-r--r--. 1 root root  9969 Oct 19 09:30 NIFTY_19-10-2018_09:30.csv
--rw-r--r--. 1 root root 10655 Oct 19 11:50 NIFTY_19-10-2018_11:50.csv
--rw-r--r--. 1 root root 10665 Oct 19 15:32 NIFTY_19-10-2018_15:32.csv
--rw-r--r--. 1 root root 10007 Oct 22 09:30 NIFTY_22-10-2018_09:30.csv
--rw-r--r--. 1 root root 10618 Oct 22 11:50 NIFTY_22-10-2018_11:50.csv
--rw-r--r--. 1 root root 10810 Oct 22 15:32 NIFTY_22-10-2018_15:32.csv
--rw-r--r--. 1 root root  9906 Oct 23 09:30 NIFTY_23-10-2018_09:30.csv
--rw-r--r--. 1 root root 10674 Oct 23 11:50 NIFTY_23-10-2018_11:50.csv
--rw-r--r--. 1 root root 11037 Oct 23 15:32 NIFTY_23-10-2018_15:32.csv
--rw-r--r--. 1 root root  9883 Oct 24 09:30 NIFTY_24-10-2018_09:30.csv
--rw-r--r--. 1 root root 10864 Oct 24 11:50 NIFTY_24-10-2018_11:50.csv
--rw-r--r--. 1 root root 11153 Oct 24 15:32 NIFTY_24-10-2018_15:32.csv
--rw-r--r--. 1 root root  9661 Oct 25 09:30 NIFTY_25-10-2018_09:30.csv
--rw-r--r--. 1 root root 10245 Oct 25 11:50 NIFTY_25-10-2018_11:50.csv
--rw-r--r--. 1 root root 10619 Oct 25 15:32 NIFTY_25-10-2018_15:32.csv
--rw-r--r--. 1 root root 10171 Oct 26 09:30 NIFTY_26-10-2018_09:30.csv
--rw-r--r--. 1 root root 10726 Oct 26 11:50 NIFTY_26-10-2018_11:50.csv
--rw-r--r--. 1 root root 10604 Oct 26 15:32 NIFTY_26-10-2018_15:32.csv
--rw-r--r--. 1 root root 10064 Oct 29 09:30 NIFTY_29-10-2018_09:30.csv
--rw-r--r--. 1 root root 10546 Oct 29 11:50 NIFTY_29-10-2018_11:50.csv
--rw-r--r--. 1 root root 10949 Oct 29 15:32 NIFTY_29-10-2018_15:32.csv
--rw-r--r--. 1 root root 10256 Oct 30 09:30 NIFTY_30-10-2018_09:30.csv
--rw-r--r--. 1 root root 10621 Oct 30 11:50 NIFTY_30-10-2018_11:50.csv
--rw-r--r--. 1 root root 10754 Oct 30 15:32 NIFTY_30-10-2018_15:32.csv
--rw-r--r--. 1 root root 10135 Oct 31 09:30 NIFTY_31-10-2018_09:30.csv
--rw-r--r--. 1 root root 10799 Oct 31 11:50 NIFTY_31-10-2018_11:50.csv
--rw-r--r--. 1 root root 10967 Oct 31 15:32 NIFTY_31-10-2018_15:32.csv
--rw-r--r--. 1 root root 10247 Nov  1 09:30 NIFTY_01-11-2018_09:30.csv
--rw-r--r--. 1 root root 10785 Nov  1 11:50 NIFTY_01-11-2018_11:50.csv
--rw-r--r--. 1 root root 10742 Nov  1 15:32 NIFTY_01-11-2018_15:32.csv
--rw-r--r--. 1 root root 10283 Nov  2 09:30 NIFTY_02-11-2018_09:30.csv
--rw-r--r--. 1 root root 10921 Nov  2 11:50 NIFTY_02-11-2018_11:50.csv
--rw-r--r--. 1 root root 11048 Nov  2 15:32 NIFTY_02-11-2018_15:32.csv
--rw-r--r--. 1 root root 10473 Nov  5 09:30 NIFTY_05-11-2018_09:30.csv
--rw-r--r--. 1 root root 10784 Nov  5 11:50 NIFTY_05-11-2018_11:50.csv
--rw-r--r--. 1 root root 10935 Nov  5 15:32 NIFTY_05-11-2018_15:32.csv
--rw-r--r--. 1 root root 10343 Nov  6 09:30 NIFTY_06-11-2018_09:30.csv
--rw-r--r--. 1 root root 10707 Nov  6 11:50 NIFTY_06-11-2018_11:50.csv
--rw-r--r--. 1 root root 10907 Nov  6 15:32 NIFTY_06-11-2018_15:32.csv
--rw-r--r--. 1 root root 10959 Nov  7 09:30 NIFTY_07-11-2018_09:30.csv
--rw-r--r--. 1 root root 10959 Nov  7 11:50 NIFTY_07-11-2018_11:50.csv
--rw-r--r--. 1 root root 10959 Nov  7 15:32 NIFTY_07-11-2018_15:32.csv
--rw-r--r--. 1 root root 10350 Nov  8 09:30 NIFTY_08-11-2018_09:30.csv
--rw-r--r--. 1 root root 10350 Nov  8 11:50 NIFTY_08-11-2018_11:50.csv
--rw-r--r--. 1 root root 10350 Nov  8 15:32 NIFTY_08-11-2018_15:32.csv
--rw-r--r--. 1 root root 10741 Nov 13 08:44 NIFTY_09-11-2018_15:32.csv
--rw-r--r--. 1 root root 10660 Nov 13 08:44 NIFTY_09-11-2018_11:50.csv
--rw-r--r--. 1 root root 10165 Nov 13 08:44 NIFTY_09-11-2018_09:30.csv
--rw-r--r--. 1 root root 10961 Nov 13 08:44 NIFTY_12-11-2018_15:32.csv
--rw-r--r--. 1 root root 10407 Nov 13 08:44 NIFTY_12-11-2018_11:50.csv
--rw-r--r--. 1 root root 10227 Nov 13 08:44 NIFTY_12-11-2018_09:30.csv
--rw-r--r--. 1 root root 10169 Nov 13 09:30 NIFTY_13-11-2018_09:30.csv
--rw-r--r--. 1 root root 10511 Nov 13 11:50 NIFTY_13-11-2018_11:50.csv
--rw-r--r--. 1 root root 10957 Nov 13 15:32 NIFTY_13-11-2018_15:32.csv
--rw-r--r--. 1 root root 10227 Nov 14 09:30 NIFTY_14-11-2018_09:30.csv
--rw-r--r--. 1 root root 10645 Nov 14 11:50 NIFTY_14-11-2018_11:50.csv
--rw-r--r--. 1 root root 10739 Nov 14 15:32 NIFTY_14-11-2018_15:32.csv
--rw-r--r--. 1 root root 10054 Nov 15 09:30 NIFTY_15-11-2018_09:30.csv
--rw-r--r--. 1 root root 10544 Nov 15 11:50 NIFTY_15-11-2018_11:50.csv
--rw-r--r--. 1 root root 10571 Nov 15 15:32 NIFTY_15-11-2018_15:32.csv
--rw-r--r--. 1 root root 10036 Nov 16 09:30 NIFTY_16-11-2018_09:30.csv
--rw-r--r--. 1 root root 10604 Nov 16 11:50 NIFTY_16-11-2018_11:50.csv
--rw-r--r--. 1 root root 10684 Nov 16 15:32 NIFTY_16-11-2018_15:32.csv
--rw-r--r--. 1 root root 10204 Nov 19 09:30 NIFTY_19-11-2018_09:30.csv
--rw-r--r--. 1 root root 10502 Nov 19 11:50 NIFTY_19-11-2018_11:50.csv
--rw-r--r--. 1 root root 10915 Nov 19 15:32 NIFTY_19-11-2018_15:32.csv
--rw-r--r--. 1 root root 10158 Nov 20 09:30 NIFTY_20-11-2018_09:30.csv
--rw-r--r--. 1 root root 10585 Nov 20 11:50 NIFTY_20-11-2018_11:50.csv
--rw-r--r--. 1 root root 10895 Nov 20 15:32 NIFTY_20-11-2018_15:32.csv
--rw-r--r--. 1 root root  9889 Nov 21 09:30 NIFTY_21-11-2018_09:30.csv
--rw-r--r--. 1 root root 10752 Nov 21 11:50 NIFTY_21-11-2018_11:50.csv
--rw-r--r--. 1 root root 10862 Nov 21 15:32 NIFTY_21-11-2018_15:32.csv
--rw-r--r--. 1 root root  9984 Nov 22 09:30 NIFTY_22-11-2018_09:30.csv
--rw-r--r--. 1 root root 10566 Nov 22 11:50 NIFTY_22-11-2018_11:50.csv
--rw-r--r--. 1 root root 10858 Nov 22 15:32 NIFTY_22-11-2018_15:32.csv
--rw-r--r--. 1 root root 11106 Nov 23 09:30 NIFTY_23-11-2018_09:30.csv
--rw-r--r--. 1 root root 11106 Nov 23 11:50 NIFTY_23-11-2018_11:50.csv
--rw-r--r--. 1 root root 11106 Nov 23 15:32 NIFTY_23-11-2018_15:32.csv
--rw-r--r--. 1 root root 10029 Nov 26 09:30 NIFTY_26-11-2018_09:30.csv
--rw-r--r--. 1 root root 10616 Nov 26 11:50 NIFTY_26-11-2018_11:50.csv
--rw-r--r--. 1 root root 10745 Nov 26 15:32 NIFTY_26-11-2018_15:32.csv
--rw-r--r--. 1 root root  9953 Nov 27 09:30 NIFTY_27-11-2018_09:30.csv
--rw-r--r--. 1 root root 10554 Nov 27 11:50 NIFTY_27-11-2018_11:50.csv
--rw-r--r--. 1 root root 10534 Nov 27 15:32 NIFTY_27-11-2018_15:32.csv
--rw-r--r--. 1 root root  9888 Nov 28 09:30 NIFTY_28-11-2018_09:30.csv
--rw-r--r--. 1 root root 10690 Nov 28 11:50 NIFTY_28-11-2018_11:50.csv
--rw-r--r--. 1 root root 10919 Nov 28 15:32 NIFTY_28-11-2018_15:32.csv
--rw-r--r--. 1 root root  9708 Nov 29 09:30 NIFTY_29-11-2018_09:30.csv
--rw-r--r--. 1 root root 10050 Nov 29 11:50 NIFTY_29-11-2018_11:50.csv
--rw-r--r--. 1 root root 10010 Nov 29 15:32 NIFTY_29-11-2018_15:32.csv
--rw-r--r--. 1 root root 11406 Nov 30 09:30 NIFTY_30-11-2018_09:30.csv
--rw-r--r--. 1 root root 14262 Nov 30 11:50 NIFTY_30-11-2018_11:50.csv
--rw-r--r--. 1 root root 14355 Nov 30 15:32 NIFTY_30-11-2018_15:32.csv
--rw-r--r--. 1 root root 13893 Dec  3 09:30 NIFTY_03-12-2018_09:30.csv
--rw-r--r--. 1 root root 14269 Dec  3 11:50 NIFTY_03-12-2018_11:50.csv
--rw-r--r--. 1 root root 14748 Dec  3 15:32 NIFTY_03-12-2018_15:32.csv
--rw-r--r--. 1 root root 13734 Dec  4 09:30 NIFTY_04-12-2018_09:30.csv
--rw-r--r--. 1 root root 14629 Dec  4 11:50 NIFTY_04-12-2018_11:50.csv
--rw-r--r--. 1 root root 14533 Dec  4 15:32 NIFTY_04-12-2018_15:32.csv
--rw-r--r--. 1 root root 14010 Dec  5 09:30 NIFTY_05-12-2018_09:30.csv
--rw-r--r--. 1 root root 14728 Dec  5 11:50 NIFTY_05-12-2018_11:50.csv
--rw-r--r--. 1 root root 14767 Dec  5 15:32 NIFTY_05-12-2018_15:32.csv
--rw-r--r--. 1 root root 13900 Dec  6 09:30 NIFTY_06-12-2018_09:30.csv
--rw-r--r--. 1 root root 14646 Dec  6 11:50 NIFTY_06-12-2018_11:50.csv
--rw-r--r--. 1 root root 14837 Dec  6 15:32 NIFTY_06-12-2018_15:32.csv
--rw-r--r--. 1 root root 14088 Dec  7 09:30 NIFTY_07-12-2018_09:30.csv
--rw-r--r--. 1 root root 14581 Dec  7 11:50 NIFTY_07-12-2018_11:50.csv
--rw-r--r--. 1 root root 13426 Dec  7 15:32 NIFTY_07-12-2018_15:32.csv
--rw-r--r--. 1 root root 13673 Dec 10 09:30 NIFTY_10-12-2018_09:30.csv
--rw-r--r--. 1 root root 14887 Dec 10 11:50 NIFTY_10-12-2018_11:50.csv
--rw-r--r--. 1 root root 15317 Dec 10 15:32 NIFTY_10-12-2018_15:32.csv
--rw-r--r--. 1 root root 14502 Dec 11 09:30 NIFTY_11-12-2018_09:30.csv
--rw-r--r--. 1 root root 15209 Dec 11 11:50 NIFTY_11-12-2018_11:50.csv
--rw-r--r--. 1 root root 15099 Dec 11 15:32 NIFTY_11-12-2018_15:32.csv
--rw-r--r--. 1 root root 14202 Dec 12 09:30 NIFTY_12-12-2018_09:30.csv
--rw-r--r--. 1 root root 14973 Dec 12 11:50 NIFTY_12-12-2018_11:50.csv
--rw-r--r--. 1 root root 15156 Dec 12 15:32 NIFTY_12-12-2018_15:32.csv
--rw-r--r--. 1 root root 14309 Dec 13 09:30 NIFTY_13-12-2018_09:30.csv
--rw-r--r--. 1 root root 14666 Dec 13 11:50 NIFTY_13-12-2018_11:50.csv
--rw-r--r--. 1 root root 14827 Dec 13 15:32 NIFTY_13-12-2018_15:32.csv
--rw-r--r--. 1 root root 14035 Dec 14 09:30 NIFTY_14-12-2018_09:30.csv
--rw-r--r--. 1 root root 12910 Dec 14 11:50 NIFTY_14-12-2018_11:50.csv
--rw-r--r--. 1 root root 14622 Dec 14 15:32 NIFTY_14-12-2018_15:32.csv
--rw-r--r--. 1 root root     0 Dec 14 19:07 list.txt
+
+NIFTY_14-10-2018_22:03.csv
+NIFTY_14-10-2018_22:41.csv
+NIFTY_15-10-2018_12:30.csv
+NIFTY_15-10-2018_15:32.csv
+NIFTY_16-10-2018_09:30.csv
+NIFTY_16-10-2018_11:50.csv
+NIFTY_16-10-2018_15:32.csv
+NIFTY_17-10-2018_09:30.csv
+NIFTY_17-10-2018_11:50.csv
+NIFTY_17-10-2018_15:32.csv
+NIFTY_18-10-2018_09:30.csv
+NIFTY_18-10-2018_11:50.csv
+NIFTY_18-10-2018_15:32.csv
+NIFTY_19-10-2018_09:30.csv
+NIFTY_19-10-2018_11:50.csv
+NIFTY_19-10-2018_15:32.csv
+NIFTY_22-10-2018_09:30.csv
+NIFTY_22-10-2018_11:50.csv
+NIFTY_22-10-2018_15:32.csv
+NIFTY_23-10-2018_09:30.csv
+NIFTY_23-10-2018_11:50.csv
+NIFTY_23-10-2018_15:32.csv
+NIFTY_24-10-2018_09:30.csv
+NIFTY_24-10-2018_11:50.csv
+NIFTY_24-10-2018_15:32.csv
+NIFTY_25-10-2018_09:30.csv
+NIFTY_25-10-2018_11:50.csv
+NIFTY_25-10-2018_15:32.csv
+NIFTY_26-10-2018_09:30.csv
+NIFTY_26-10-2018_11:50.csv
+NIFTY_26-10-2018_15:32.csv
+NIFTY_29-10-2018_09:30.csv
+NIFTY_29-10-2018_11:50.csv
+NIFTY_29-10-2018_15:32.csv
+NIFTY_30-10-2018_09:30.csv
+NIFTY_30-10-2018_11:50.csv
+NIFTY_30-10-2018_15:32.csv
+NIFTY_31-10-2018_09:30.csv
+NIFTY_31-10-2018_11:50.csv
+NIFTY_31-10-2018_15:32.csv
+NIFTY_01-11-2018_09:30.csv
+NIFTY_01-11-2018_11:50.csv
+NIFTY_01-11-2018_15:32.csv
+NIFTY_02-11-2018_09:30.csv
+NIFTY_02-11-2018_11:50.csv
+NIFTY_02-11-2018_15:32.csv
+NIFTY_05-11-2018_09:30.csv
+NIFTY_05-11-2018_11:50.csv
+NIFTY_05-11-2018_15:32.csv
+NIFTY_06-11-2018_09:30.csv
+NIFTY_06-11-2018_11:50.csv
+NIFTY_06-11-2018_15:32.csv
+NIFTY_07-11-2018_09:30.csv
+NIFTY_07-11-2018_11:50.csv
+NIFTY_07-11-2018_15:32.csv
+NIFTY_08-11-2018_09:30.csv
+NIFTY_08-11-2018_11:50.csv
+NIFTY_08-11-2018_15:32.csv
+NIFTY_09-11-2018_15:32.csv
+NIFTY_09-11-2018_11:50.csv
+NIFTY_09-11-2018_09:30.csv
+NIFTY_12-11-2018_15:32.csv
+NIFTY_12-11-2018_11:50.csv
+NIFTY_12-11-2018_09:30.csv
+NIFTY_13-11-2018_09:30.csv
+NIFTY_13-11-2018_11:50.csv
+NIFTY_13-11-2018_15:32.csv
+NIFTY_14-11-2018_09:30.csv
+NIFTY_14-11-2018_11:50.csv
+NIFTY_14-11-2018_15:32.csv
+NIFTY_15-11-2018_09:30.csv
+NIFTY_15-11-2018_11:50.csv
+NIFTY_15-11-2018_15:32.csv
+NIFTY_16-11-2018_09:30.csv
+NIFTY_16-11-2018_11:50.csv
+NIFTY_16-11-2018_15:32.csv
+NIFTY_19-11-2018_09:30.csv
+NIFTY_19-11-2018_11:50.csv
+NIFTY_19-11-2018_15:32.csv
+NIFTY_20-11-2018_09:30.csv
+NIFTY_20-11-2018_11:50.csv
+NIFTY_20-11-2018_15:32.csv
+NIFTY_21-11-2018_09:30.csv
+NIFTY_21-11-2018_11:50.csv
+NIFTY_21-11-2018_15:32.csv
+NIFTY_22-11-2018_09:30.csv
+NIFTY_22-11-2018_11:50.csv
+NIFTY_22-11-2018_15:32.csv
+NIFTY_23-11-2018_09:30.csv
+NIFTY_23-11-2018_11:50.csv
+NIFTY_23-11-2018_15:32.csv
+NIFTY_26-11-2018_09:30.csv
+NIFTY_26-11-2018_11:50.csv
+NIFTY_26-11-2018_15:32.csv
+NIFTY_27-11-2018_09:30.csv
+NIFTY_27-11-2018_11:50.csv
+NIFTY_27-11-2018_15:32.csv
+NIFTY_28-11-2018_09:30.csv
+NIFTY_28-11-2018_11:50.csv
+NIFTY_28-11-2018_15:32.csv
+NIFTY_29-11-2018_09:30.csv
+NIFTY_29-11-2018_11:50.csv
+NIFTY_29-11-2018_15:32.csv
+NIFTY_30-11-2018_09:30.csv
+NIFTY_30-11-2018_11:50.csv
+NIFTY_30-11-2018_15:32.csv
+NIFTY_03-12-2018_09:30.csv
+NIFTY_03-12-2018_11:50.csv
+NIFTY_03-12-2018_15:32.csv
+NIFTY_04-12-2018_09:30.csv
+NIFTY_04-12-2018_11:50.csv
+NIFTY_04-12-2018_15:32.csv
+NIFTY_05-12-2018_09:30.csv
+NIFTY_05-12-2018_11:50.csv
+NIFTY_05-12-2018_15:32.csv
+NIFTY_06-12-2018_09:30.csv
+NIFTY_06-12-2018_11:50.csv
+NIFTY_06-12-2018_15:32.csv
+NIFTY_07-12-2018_09:30.csv
+NIFTY_07-12-2018_11:50.csv
+NIFTY_07-12-2018_15:32.csv
+NIFTY_10-12-2018_09:30.csv
+NIFTY_10-12-2018_11:50.csv
+NIFTY_10-12-2018_15:32.csv
+NIFTY_11-12-2018_09:30.csv
+NIFTY_11-12-2018_11:50.csv
+NIFTY_11-12-2018_15:32.csv
+NIFTY_12-12-2018_09:30.csv
+NIFTY_12-12-2018_11:50.csv
+NIFTY_12-12-2018_15:32.csv
+NIFTY_13-12-2018_09:30.csv
+NIFTY_13-12-2018_11:50.csv
+NIFTY_13-12-2018_15:32.csv
+NIFTY_14-12-2018_09:30.csv
+NIFTY_14-12-2018_11:50.csv
+NIFTY_14-12-2018_15:32.csv
+list.txt
