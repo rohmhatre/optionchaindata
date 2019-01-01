@@ -2,7 +2,7 @@
 cd /Sites/option_chain
 source /Sites/env/bin/activate
 python optionchain.py
-DATE=`date +%Y-%m-%d%H-%m`
+DATE=`date +%Y-%m-%d_%H-%m`
 ls -ltr /Sites/option_chain/NIFTY |awk '{if (NR!=1){print $9}}'> /Sites/option_chain/lists/nifty.txt
 ls -ltr /Sites/option_chain/PVR/ | awk '{if (NR!=1){print $9}}'>/Sites/option_chain/lists/pvr.txt
 ls -ltr /Sites/option_chain/TECHM/ | awk '{if (NR!=1){print $9}}'> /Sites/option_chain/lists/techm.txt

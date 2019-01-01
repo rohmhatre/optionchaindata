@@ -12,7 +12,8 @@ for i in ListOfStock:
         Base_url =("https://www.nseindia.com/live_market/dynaContent/live_watch/option_chain/optionKeys.jsp?symbol="+i)
     else:
         Base_url =("https://www.nseindia.com/live_market/dynaContent/live_watch/option_chain/optionKeys.jsp")
-    page = requests.get(Base_url)
+    page = 0
+    page = requests.get(Base_url,headers={'Cache-Control': 'no-cache'})
     page.status_code
     page.content
 
