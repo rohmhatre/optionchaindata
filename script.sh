@@ -16,6 +16,8 @@ ls -ltr /Sites/option_chain/BIOCON/ | awk '{if (NR!=1){print $9}}'> /Sites/optio
 ls -ltr /Sites/option_chain/HDFC/ | awk '{if (NR!=1){print $9}}'> /Sites/option_chain/lists/hdfc.txt
 ls -ltr /Sites/option_chain/M\&M/ | awk '{if (NR!=1){print $9}}'> /Sites/option_chain/lists/m\&m.txt
 ls -ltr /Sites/option_chain/TCS/ | awk '{if (NR!=1){print $9}}'> /Sites/option_chain/lists/tcs.txt
+python create_analysis_csv.py
+python SendMail.py 
 COMMIT_MSG="Commit on "$DATE
 git add	.
 git commit -m "$COMMIT_MSG"
