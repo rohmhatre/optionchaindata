@@ -2,7 +2,7 @@ import pandas  as pd
 ###
 srcol=['Name','Curprice','R1','R2','R3','R4','S1','S2','S3','S4']
 ###
-stklist=["nifty", "hdfc", "m&m" ,"escorts", "l&tfh","biocon","banknifty","grasim","kotakbank","techm","tcs"]
+stklist=["nifty", "hdfc", "m&m" ,"escorts", "l&tfh","biocon","banknifty","grasim","kotakbank","techm","tcs","reliance"]
 
 for stname in stklist:
     msg=""

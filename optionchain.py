@@ -5,7 +5,7 @@ import os
 from datetime import datetime
 cur_date=datetime.now().strftime("%d-%m-%Y_%H:%M")
 
-ListOfStock=['NIFTY','BANKNIFTY','HDFC','YESBANK','L%26TFH','ESCORTS','KOTAKBANK','M%26M','TECHM','PVR','BIOCON','GRASIM','TCS']
+ListOfStock=['NIFTY','BANKNIFTY','HDFC','YESBANK','L%26TFH','ESCORTS','KOTAKBANK','M%26M','TECHM','BIOCON','GRASIM','TCS','RELIANCE']
 
 for i in ListOfStock:
     if i != "NIFTY":

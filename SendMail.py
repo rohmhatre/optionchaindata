@@ -1,6 +1,6 @@
 import pandas as pd
 import datetime, smtplib
-stklist=["nifty", "hdfc", "m&m" ,"escorts", "l&tfh","biocon","banknifty","grasim","kotakbank","techm","tcs"]
+stklist=["nifty", "hdfc", "m&m" ,"escorts", "l&tfh","biocon","banknifty","grasim","kotakbank","techm","tcs","reliance"]
 
 def mail_to(msg,toaddress):
     server = smtplib.SMTP('smtp.gmail.com', 587)
