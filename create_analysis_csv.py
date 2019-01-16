@@ -1,21 +1,17 @@
 import pandas  as pd
+import os
 ###
 srcol=['Name','Curprice','R1','R2','R3','R4','S1','S2','S3','S4']
 ###
-stklist=["nifty", "hdfc", "m&m" ,"escorts", "l&tfh","biocon","banknifty","grasim","kotakbank","techm","tcs","reliance"]
+stklist=open('/Sites/option_chain/lists/stlist.txt')
 
-for stname in stklist:
-    msg=""
-    filename=''
+def create_analysis(stname,filename):
     df=pd.DataFrame(columns=srcol)
-    listofnames=open('/Sites/option_chain/lists/'+stname+'.txt')
     s1,s2,s3,s4=[],[],[],[]
     r1,r2,r3,r4=[],[],[],[]
     datelist=[]
     datedata=0
-    cur_val=[]
-    for name in listofnames:
-        filename=name 
+    cur_val=[]    
     csvdata=pd.read_csv('/Sites/option_chain/'+stname.upper()+'/'+filename.strip('\n'),index_col="StrikePrice")
     csvdata=csvdata.replace("-",0).convert_objects(convert_numeric=True)
     call_list=['CallOI', 'CallChnginOI','CallLTP']
@@ -56,9 +52,29 @@ for stname in stklist:
     df['S3']=s3
     df['S4']=s4
     
-    analysis_csv=pd.read_csv('/Sites/option_chain/lists/Analysis_'+stname+'.csv')
-    analysis_csv=analysis_csv[srcol]
-    NewCsvData=analysis_csv.append(df,ignore_index=True)
-    df=NewCsvData[srcol]
-    if analysis_csv.at[analysis_csv.shape[0]-1,"Name"].lower()!=df.at[0,'Name'].lower():
+    if os.path.isfile('/Sites/option_chain/lists/Analysis_'+stname+'.csv'):
+        analysis_csv=pd.read_csv('/Sites/option_chain/lists/Analysis_'+stname+'.csv')
+        print(">>>##",stname)
+        analysis_csv=analysis_csv[srcol]
+        NewCsvData=analysis_csv.append(df,ignore_index=True)
+        df=NewCsvData[srcol]
+        print(df)
+        print(analysis_csv)
+        if analysis_csv.at[analysis_csv.shape[0]-1,"Name"].lower()!=df.at[df.shape[0]-1,'Name'].lower():
+            print(">>>",stname)
+            NewCsvData.to_csv('/Sites/option_chain/lists/Analysis_'+stname+'.csv')
+    else:
+        analysis_csv=pd.DataFrame(columns=srcol)
+        NewCsvData=analysis_csv.append(df,ignore_index=True)
+        NewCsvData=NewCsvData[srcol]
         NewCsvData.to_csv('/Sites/option_chain/lists/Analysis_'+stname+'.csv')
+
+for stname in stklist:
+    stname=stname.strip('\n')
+    stname=stname.lower()
+    msg=""
+    filename=''
+    listofnames=open('/Sites/option_chain/lists/'+stname+'.txt')
+    for name in listofnames:
+        filename=name 
+    create_analysis(stname,filename)

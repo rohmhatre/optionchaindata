@@ -5,9 +5,12 @@ import os
 from datetime import datetime
 cur_date=datetime.now().strftime("%d-%m-%Y_%H:%M")
 
-ListOfStock=['NIFTY','BANKNIFTY','HDFC','YESBANK','L%26TFH','ESCORTS','KOTAKBANK','M%26M','TECHM','BIOCON','GRASIM','TCS','RELIANCE']
+ListOfStock=open('/Sites/option_chain/lists/stlist.txt')
 
-for i in ListOfStock:
+for i in ListOfStock.readlines():
+    i=i.strip('\n')
+    if '&' in i:
+        i=i.replace('&','%26')
     if i != "NIFTY":
         Base_url =("https://www.nseindia.com/live_market/dynaContent/live_watch/option_chain/optionKeys.jsp?symbol="+i)
     else:
@@ -76,4 +79,6 @@ for i in ListOfStock:
         row_marker+=1
 #print(new_table)
     new_table["CurrentVal"]=stock_price
+    if not os.path.exists(stock_name):
+        os.makedirs(stock_name)
     new_table.to_csv(stock_name+"/"+stock_name+"_"+cur_date+".csv")
