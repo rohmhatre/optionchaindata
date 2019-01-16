@@ -58,8 +58,6 @@ def create_analysis(stname,filename):
         analysis_csv=analysis_csv[srcol]
         NewCsvData=analysis_csv.append(df,ignore_index=True)
         df=NewCsvData[srcol]
-        print(df)
-        print(analysis_csv)
         if analysis_csv.at[analysis_csv.shape[0]-1,"Name"].lower()!=df.at[df.shape[0]-1,'Name'].lower():
             print(">>>",stname)
             NewCsvData.to_csv('/Sites/option_chain/lists/Analysis_'+stname+'.csv')
