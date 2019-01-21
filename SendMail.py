@@ -67,7 +67,7 @@ for stname in stklist:
     if df.shape[0]>1:
         print(stname)
         msg+=findSR("1",df.at[df.shape[0]-2,'S1'],df.at[df.shape[0]-1,'S1'],df.at[df.shape[0]-2,'R1'],df.at[df.shape[0]-1,'R1'])
-        msg+=IVCALCULATOR(stname,df.at[df.shape[0]-2,'R1'],df.at[df.shape[0]-1,'S1'])
+        msg+=IVCALCULATOR(stname,df.at[df.shape[0]-1,'R1'],df.at[df.shape[0]-1,'S1'])
         msg+=findSR("2",df.at[df.shape[0]-2,'S2'],df.at[df.shape[0]-1,'S2'],df.at[df.shape[0]-2,'R2'],df.at[df.shape[0]-1,'R2'])
         msg+=IVCALCULATOR(stname,df.at[df.shape[0]-1,'R2'],df.at[df.shape[0]-1,'S2'])
         msg+=findSR("3",df.at[df.shape[0]-2,'S3'],df.at[df.shape[0]-1,'S3'],df.at[df.shape[0]-2,'R3'],df.at[df.shape[0]-1,'R3'])
