@@ -23,7 +23,7 @@ def IVCALCULATOR(stname,R,S):
     CallIV=float(csvdata.CallIV.loc[R])
     PutIV=float(csvdata.PutIV.loc[S])
     NoDays=Days.days
-
+    print(stname,CallIV,PutIV)
     CallNormDist=math.log(R/CurrentPrice)/(CallIV*math.sqrt(NoDays/365))
     PutNormDist=math.log(S/CurrentPrice)/(PutIV*math.sqrt(NoDays/365))
     msg+='Probability to hit '+ str(R)+' :  '+str(norm.cdf(CallNormDist*100)*100)+'\n'
