@@ -14,7 +14,7 @@ msg=""
 
 def IVCALCULATOR(stname,R,S):
     msg=""
-    Days= datetime.date(2019, 1, 31) - datetime.date.today()
+    Days= datetime.date(2019, 2, 28) - datetime.date.today()
     stlist=open('/Sites/option_chain/lists/'+stname+'.txt')
     analisisnifty=pd.read_csv('/Sites/option_chain/lists/Analysis_'+stname+'.csv')
     csvdata=pd.read_csv('/Sites/option_chain/'+stname.upper()+'/'+stlist.readlines()[-1].strip('\n'),index_col='StrikePrice')
