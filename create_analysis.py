@@ -120,23 +120,21 @@ for stname in stlist:
             for j in range(len(srvalues[key])):
                 strval=strval+str(srvalues[key][j])+','
             srvalues[key]=strval
-
-            
-            
-    if os.path.isfile('/Sites/option_chain/lists/Analysis_'+stname.upper()+'.csv'):
-        analysis_csv=pd.read_csv('/Sites/option_chain/lists/Analysis_'+stname.upper()+'.csv')
-        print(">>>##",stname)
+    srvalues['name']=filenm
+    if os.path.isfile('/Sites/option_chain/lists/Analysis_'+stname+'.csv'):
+        analysis_csv=pd.read_csv('/Sites/option_chain/lists/Analysis_'+stname+'.csv')
+        print("file found",stname)
         analysis_csv=analysis_csv[analysiscol]
         NewCsvData=analysis_csv.append(srvalues,ignore_index=True)
         df=NewCsvData[analysiscol]
         if analysis_csv.at[analysis_csv.shape[0]-1,"name"].lower()!=df.at[df.shape[0]-1,'name'].lower():
-            print(">>>",stname)
-            NewCsvData.to_csv('/Sites/option_chain/lists/Analysis_'+stname.upper()+'.csv')
+            print("New data wrriten",stname)
+            NewCsvData.to_csv('/Sites/option_chain/lists/Analysis_'+stname+'.csv')
     else:
         analysis_csv=pd.DataFrame(columns=analysiscol)
         NewCsvData=analysis_csv.append(srvalues,ignore_index=True)
         NewCsvData=NewCsvData[analysiscol]
-        NewCsvData.to_csv('/Sites/option_chain/lists/Analysis_'+stname.upper()+'.csv')
-
+        NewCsvData.to_csv('/Sites/option_chain/lists/Analysis_'+stname+'.csv')
+        print("new file created")
 
 
