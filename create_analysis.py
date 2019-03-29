@@ -9,7 +9,7 @@ import math
 
 def IVCALCULATOR(CurPrice,S,R,PutIV,CallIV):
     prob=[]
-    Days= datetime.date(2019, 3, 28) - datetime.date.today()
+    Days= datetime.date(2019, 4, 4) - datetime.date.today()
     NoDays=Days.days+1
 
 
