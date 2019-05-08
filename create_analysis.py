@@ -2,16 +2,18 @@ import requests
 import pandas as pd
 from bs4 import BeautifulSoup
 import os
-import datetime
+import datetime as datetime
 from scipy.stats import norm
 import math
 
 
-def IVCALCULATOR(CurPrice,S,R,PutIV,CallIV):
-    prob=[]
-    Days= datetime.date(2019, 4, 26) - datetime.date.today()
-    NoDays=Days.days+1
 
+def IVCALCULATOR(CurPrice,S,R,PutIV,CallIV,expiry):
+    prob=[]
+    format_str='%d-%b-%Y'
+    datetime_obj = datetime.datetime.strptime(expiry, format_str)
+    Days= datetime_obj - datetime.datetime.now()
+    NoDays=Days.days+1
 
     CallNormDist=math.log(R/CurPrice)/(CallIV*math.sqrt(NoDays/365))
     PutNormDist=math.log(S/CurPrice)/(PutIV*math.sqrt(NoDays/365))
@@ -19,6 +21,19 @@ def IVCALCULATOR(CurPrice,S,R,PutIV,CallIV):
     prob.append(round(norm.cdf(CallNormDist*100)*100,2))
     prob.append(round((1-norm.cdf(PutNormDist*100))*100,2))
     return prob
+
+#def IVCALCULATOR(CurPrice,S,R,PutIV,CallIV):
+#    prob=[]
+#    Days= datetime.date(2019, 4, 26) - datetime.date.today()
+#    NoDays=Days.days+1
+
+
+ #   CallNormDist=math.log(R/CurPrice)/(CallIV*math.sqrt(NoDays/365))
+ #   PutNormDist=math.log(S/CurPrice)/(PutIV*math.sqrt(NoDays/365))
+    
+  #  prob.append(round(norm.cdf(CallNormDist*100)*100,2))
+  #  prob.append(round((1-norm.cdf(PutNormDist*100))*100,2))
+   # return prob
 
 def color_negative_red(val):
     color = 'red' if val < 0 else 'black'
@@ -28,7 +43,7 @@ def highlight_max(s):
     is_max = s == s.max()
     return ['background-color: yellow' if v else '' for v in is_max]
 
-def create_analysis(csvdata):
+def create_analysis(csvdata,stname):
     OptionAnalysis=dict()
     OptionAnalysis["curprice"]=csvdata.CurrentVal[0]
     datelist=[]
@@ -36,6 +51,23 @@ def create_analysis(csvdata):
     cur_val=[]
     csvdata=csvdata.replace("-",0).convert_objects(convert_numeric=True,)
     csvdata=csvdata.set_index("StrikePrice")
+
+    lastfile = glob.glob("/Sites/Stock_Watch/tmp/fo*")
+    lastfile.sort(key=os.path.getmtime)
+    CsvData = pd.read_csv(lastfile[-1])
+
+    IndexEx="select DISTINCT EXPIRY_DT from CsvData where INSTRUMENT='OPTIDX';"
+    IndexOpEx=ps.sqldf(IndexEx, locals())
+    IndexOpExpiry=list(IndexOpEx["EXPIRY_DT"])
+
+    StkEx="select DISTINCT EXPIRY_DT from CsvData where INSTRUMENT='OPTSTK';"
+    StkOpEx=ps.sqldf(StkEx, locals())
+    StkOpExpiry=list(StkOpEx["EXPIRY_DT"])
+
+    if 'NIFTY' in stname.upper() or 'BANKNIFTY' in stname.upper() or 'NIFTYIT' in stname.upper():
+        expiry=IndexOpExpiry[0]
+    else:
+        expiry=StkOpExpiry[0]
    
     call_list=['CallOI', 'CallChnginOI','CallLTP','CallNetChng','CallIV','CallBidPrice','CallAskPrice']
     put_list=['PutOI', 'PutChnginOI','PutLTP','PutNetChng','PutIV','PutBidPrice','PutAskPrice']
@@ -66,6 +98,7 @@ def create_analysis(csvdata):
     OptionAnalysis["CoiMaxExit"]=[]
     OptionAnalysis["pcr"]=0
     
+
    
     
     
@@ -74,7 +107,7 @@ def create_analysis(csvdata):
         s=OptionAnalysis['support'][i]
         r=OptionAnalysis['resistance'][i]
         #print(OptionAnalysis['curprice'],s,r,otm_call.CallIV[r],otm_put.PutIV[s])
-        prob=IVCALCULATOR(OptionAnalysis['curprice'],s,r,otm_put.PutIV[s],otm_call.CallIV[r])
+        prob=IVCALCULATOR(OptionAnalysis['curprice'],s,r,otm_put.PutIV[s],otm_call.CallIV[r],expiry)
         OptionAnalysis["callprob"].append(prob[0])
         OptionAnalysis["putprob"].append(prob[1])
 
@@ -113,7 +146,7 @@ for stname in stlist:
     filenmlist=open('/Sites/option_chain/lists/'+stname.lower()+'.txt')
     filenm=filenmlist.readlines()[-1].strip('\n')
     optionchain=pd.read_csv('/Sites/option_chain/'+stname+'/'+filenm)
-    srvalues=create_analysis(optionchain)
+    srvalues=create_analysis(optionchain,stname)
     for key in srvalues:
         strval=''
         if key in ['resistance','support','CallChngInLTP','PutChngInLTP','CoiMaxAdd','CoiMaxExit','callprob','putprob']:
