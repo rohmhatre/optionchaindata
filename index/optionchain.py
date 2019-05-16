@@ -98,6 +98,7 @@ for index in indexlist:
     for expiry in IndexOpExpiry[:a]:
         expiry=expiry.upper()
         expiry=expiry.replace('-','')
+        expiry=expiry.strip('0')
         print(index,expiry)
         getoptionchain(index,expiry)
         
