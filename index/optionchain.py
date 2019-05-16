@@ -22,17 +22,7 @@ def getoptionchain(i,expiry):
 
     soup = BeautifulSoup(page.content,"html.parser")
     table_cls_1 = soup.find_all(id="octable")
-
-###find name
-#     stock_info = soup.find_all(style="font-size:1.2em;")
-#     print(stock_info)
-#     if stock_info != []:
     stock_name=i
-#         stock_price=float(stock_info[0].text.split()[1])
-#         print(stock_name,stock_price)
-
-
-
 
 #find table header
     col_list = []
@@ -77,9 +67,17 @@ def getoptionchain(i,expiry):
             tr = utf_string#.encode('utf8')
             tr = tr.replace(',' ,'')
             new_table.ix[row_marker,[nu]]=tr
-        row_marker+=1
-#print(new_table)
-    #new_table["CurrentVal"]=stock_price
+
+            row_marker+=1
+##find name
+    stock_info = soup.find_all(style="font-size:1.2em;")
+    print(stock_info)
+    if stock_info != []:
+        stock_price=float(stock_info[0].text.split()[1])
+        print(stock_name,stock_price)
+        #print(new_table)
+        new_table["CurrentVal"]=stock_price
+
     if not os.path.exists(stock_name+"/"+expiry):
         os.makedirs(stock_name+"/"+expiry)
     new_table.to_csv(stock_name+"/"+expiry+"/"+stock_name+"_"+cur_date+".csv")
@@ -102,3 +100,4 @@ for index in indexlist:
         expiry=expiry.replace('-','')
         print(index,expiry)
         getoptionchain(index,expiry)
+        
