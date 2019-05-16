@@ -68,7 +68,7 @@ def getoptionchain(i,expiry):
             tr = tr.replace(',' ,'')
             new_table.ix[row_marker,[nu]]=tr
 
-            row_marker+=1
+        row_marker+=1
 ##find name
     stock_info = soup.find_all(style="font-size:1.2em;")
     print(stock_info)
