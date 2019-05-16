@@ -13,7 +13,7 @@ def getoptionchain(i,expiry):
     if '&' in i:
         i=i.replace('&','%26')
     cur_date=datetime.now().strftime("%d-%m-%Y_%H:%M")
-    Base_url =("https://www.nseindia.com/live_market/dynaContent/live_watch/option_chain/optionKeys.jsp?symbol="+i+"&date="+expiry)
+    Base_url =("https://www.nseindia.com/live_market/dynaContent/live_watch/option_chain/optionKeys.jsp?instrument=OPTIDX&symbol="+i+"&date="+expiry)
 
     page = 0
     page = requests.get(Base_url,headers={'Cache-Control': 'no-cache'})
