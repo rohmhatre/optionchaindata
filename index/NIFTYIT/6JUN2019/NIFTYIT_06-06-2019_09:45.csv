@@ -1,0 +1,4 @@
+,CallOI,CallChnginOI,CallVolume,CallIV,CallLTP,CallNetChng,CallBidQty,CallBidPrice,CallAskPrice,CallAskQty,StrikePrice,PutBidQty,PutBidPrice,PutAskPrice,PutAskQty,PutNetChng,PutLTP,PutIV,PutVolume,PutChnginOI,PutOI,CurrentVal
+0,-,-,-,-,-,-,500,5.00,-,-,15900.00,-,-,-,-,-,-,-,-,-,50,16060.25
+1,-,-,-,-,-,-,50,5.70,-,-,16000.00,-,-,-,-,-,-,-,-,-,-,16060.25
+2,-,-,-,-,-,-,500,1.25,25.00,50,16100.00,500,5.00,-,-,-,-,-,-,-,-,16060.25
